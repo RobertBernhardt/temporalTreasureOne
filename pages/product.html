@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Temporal Treasures</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Temporal Treasures</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Toggle Navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#featured">Featured</a></li>
+                    <li><a href="../index.html#about">Our Story</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-container" id="product-container">
+                <div class="product-gallery">
+                    <img id="product-image" src="" alt="Product Image">
+                </div>
+                <div class="product-content">
+                    <h2 id="product-name"></h2>
+                    <div class="product-time" id="product-time"></div>
+                    <div class="product-price" id="product-price"></div>
+                    <div class="product-description" id="product-description"></div>
+                    
+                    <div class="product-specs">
+                        <h3>Specifications</h3>
+                        <ul>
+                            <li>
+                                <span>Time:</span>
+                                <span id="product-time-spec"></span>
+                            </li>
+                            <li>
+                                <span>Material:</span>
+                                <span id="product-material"></span>
+                            </li>
+                            <li>
+                                <span>Dimensions:</span>
+                                <span id="product-dimensions"></span>
+                            </li>
+                            <li>
+                                <span>Sand Color:</span>
+                                <span id="product-color"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button id="decrease-quantity" class="quantity-btn">-</button>
+                            <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+                            <button id="increase-quantity" class="quantity-btn">+</button>
+                        </div>
+                        <button id="add-to-cart" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Temporal Treasures</h3>
+                    <p>Artisanal Sand Clock Shop</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#featured">Featured</a></li>
+                        <li><a href="../index.html#about">Our Story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: info@temporaltreasures.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Temporal Treasures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../src/data/products.js"></script>
+    <script src="../src/components/navigation.js"></script>
+    <script src="../src/main.js"></script>
+
+    <style>
+        /* Product-specific styles that augment main.css */
+        .success-message {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4caf50;
+            color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</body>
+</html>
