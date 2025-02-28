@@ -1,6 +1,6 @@
 /**
  * Product Card Component for Temporal Treasures
- * Creates a reusable product card element
+ * Creates a bold, modern product card element
  */
 
 /**
@@ -23,7 +23,7 @@ function createProductCard(product) {
             <h3>${product.name}</h3>
             <span class="product-price">$${product.price.toFixed(2)}</span>
             <p class="product-description">${product.description.substring(0, 100)}${product.description.length > 100 ? '...' : ''}</p>
-            <a href="pages/product.html?id=${product.id}" class="btn">View Details</a>
+            <a href="pages/product.html?id=${product.id}" class="btn">DISCOVER</a>
         </div>
     `;
     
